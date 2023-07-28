@@ -1,9 +1,24 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  word = word.toLowerCase();
+  let word1 = '';
+  
+    for( let j=word.length-1; j>=0; j-- ) {
+      // Counts from last
+      
+      word1 += word[j]; 
+    }
+  console.log( word === word1);
+  } 
+
+isPalindrome("poop") 
 
 /* 
   Add your pseudocode here
+  convert word to lowercase
+  declare an empty string
+  loop through your word from last to first  while appending to the string
+  if it equals our word, it's a palindrome
 */
 
 /*
